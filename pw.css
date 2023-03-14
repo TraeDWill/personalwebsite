@@ -1,0 +1,128 @@
+/*Nav Bar*/
+.nav-list {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.list-item {
+  background-color: var(--green);
+  color: var(--white);
+  font-size: 2.4em;
+  text-align: center;
+  transition-duration: 0.4ms;
+  float: left;
+  border: none;
+  padding: 20px 0px;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--white);
+  padding: 20px 30px;
+}
+
+.link:hover {
+  background-color: var(--orange);
+  color: var(--black);
+}
+
+/*form*/
+
+.form {
+  margin: 0 auto;
+  border: 2px solid;
+  height: 450px;
+  width: 260px;
+}
+h1 {
+  text-align: center;
+  inline-size: 250px;
+  overflow-wrap: break-word;
+}
+div {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.form-element {
+  font-weight: bold;
+  text-align: left;
+  float: left;
+  width: 75px;
+  padding-left: 5px;
+}
+
+.form-input {
+  text-align: right;
+}
+
+.btn {
+  padding-left: 10px;
+  margin-left: 20px;
+}
+
+.btn-words {
+  padding-left: 5px;
+}
+
+.date-words {
+  padding-left: 5px;
+  font-weight: bold;
+  text-align: left;
+}
+
+#dateinput {
+  float: right;
+  padding-right: 40px;
+  margin-right: 10px;
+}
+
+.btn-primary {
+  background-color: var(--green);
+  color: var(--white);
+  font-size: 1em;
+  text-align: center;
+  transition-duration: 0.4ms;
+  float: left;
+  border: 1px solid var(--black);
+  padding: 5px 35px;
+  margin-top: 20px;
+  margin-left: 6px;
+}
+
+.btn-primary:hover {
+  background-color: var(--orange);
+  color: var(--black);
+}
+
+.btn-secondary {
+  background-color: var(--white);
+  color: var(--green);
+  border: 1px solid var(--green);
+  font-size: 1em;
+  text-align: center;
+  transition-duration: 0.4ms;
+  float: left;
+  padding: 5px 39px;
+  margin: 20px 5px;
+}
+
+.btn-secondary:hover {
+  background-color: red;
+  color: var(--white);
+}
+
+.fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.legend {
+  font-weight: bold;
+  text-align: left;
+  float: left;
+  padding-left: 5px;
+}
