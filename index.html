@@ -13,24 +13,19 @@
       <nav>
         <ul class="nav-list">
           <li class="list-item">
-            <a class="link" href="01-hello.html"> Exercise 01 </a>
+            <a class="link" href="#gridcontainer"> Bio </a>
           </li>
           <li class="list-item">
-            <a class="link" href="02-navbar.html"> Exercise 02 </a>
+            <a class="link" href="02-navbar.html"> Previous Work </a>
           </li>
           <li class="list-item">
-            <a class="link" href="03-form.html"> Exercise 03 </a>
+            <a class="link" href="#form"> Contact Form </a>
           </li>
         </ul>
       </nav>
     </div>
-    <section class="grid-container1">
-      <img
-        src="images/me.jpg"
-        alt="Trae Williams"
-        class="photo"
-        width="300"
-      />
+    <section class="grid-container1" id="gridcontainer">
+      <img src="images/me.jpg" alt="Trae Williams" class="photo" width="300" />
       <h1 class="name">Trae Williams</h1>
       <p class="bio">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa
@@ -45,10 +40,10 @@
         adipisci dolorum amet ea, dolorem praesentium quo!
       </p>
     </section>
-    <br/>
-    <form class="form" action="">
-      <h1 id = "form-header">Contact Form</h1>
-      <div class = "form-div">
+    <br />
+    <form class="form" id="form" action="">
+      <h1 id="form-header">Contact Form</h1>
+      <div class="form-div">
         <label for="user" class="form-element">Name:</label>
         <input
           class="form-input"
@@ -59,7 +54,7 @@
           required="required"
         />
       </div>
-      <div class = "form-div">
+      <div class="form-div">
         <label for="em" class="form-element">Email:</label>
         <input
           class="form-input"
@@ -70,7 +65,7 @@
           required="required"
         />
       </div>
-      <div class = "form-div">
+      <div class="form-div">
         <label for="pass" class="form-element">Phone Number:</label>
         <input
           class="form-input"
@@ -80,7 +75,7 @@
           maxlength="30"
         />
       </div>
-      <div class = "form-div">
+      <div class="form-div">
         <fieldset>
           <legend>
             <b>Would you prefer to be contacted by Email or Phone?</b>
@@ -95,19 +90,9 @@
 
       <label class="date-words" for="dateinput">Date:</label>
       <input id="dateinput" type="date" name="date" />
-      <div class = "form-div">
-        <input
-          class="btn-primary"
-          type="submit"
-          name="submit"
-          value="Submit"
-        />
-        <input
-          class="btn-secondary"
-          type="reset"
-          name="reset"
-          value="Reset"
-        />
+      <div class="form-div">
+        <input class="btn-primary" type="submit" name="submit" value="Submit" />
+        <input class="btn-secondary" type="reset" name="reset" value="Reset" />
       </div>
     </form>
   </body>

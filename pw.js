@@ -3,6 +3,7 @@ form.style.margin = '0 auto';
 form.style.border = '2px solid';
 form.style.height = '450px';
 form.style.width = '260px';
+form.style.marginBottom = '50px';
 
 let h1 = document.querySelector('#form-header');
 h1.style.textAlign = 'center';
