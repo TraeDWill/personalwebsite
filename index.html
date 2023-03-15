@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="pw.css" />
+    <script defer src="pw.js"></script>
+  </head>
+  <body>
+    <div class="nav-container">
+      <nav>
+        <ul class="nav-list">
+          <li class="list-item">
+            <a class="link" href="01-hello.html"> Exercise 01 </a>
+          </li>
+          <li class="list-item">
+            <a class="link" href="02-navbar.html"> Exercise 02 </a>
+          </li>
+          <li class="list-item">
+            <a class="link" href="03-form.html"> Exercise 03 </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <section class="grid-container1">
+      <img
+        src="images/me.jpg"
+        alt="Trae Williams"
+        class="photo"
+        width="300"
+      />
+      <h1 class="name">Trae Williams</h1>
+      <p class="bio">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa
+        voluptatem harum aut cupiditate quo officiis architecto obcaecati
+        eveniet eius in voluptas mollitia veritatis facilis accusamus, voluptate
+        illo molestiae, nisi nihil. Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Excepturi eligendi optio doloremque asperiores
+        nesciunt dolores illum, laboriosam rerum debitis corporis voluptate modi
+        eum incidunt animi, quaerat dolorum nulla deserunt tenetur. Lorem ipsum,
+        dolor sit amet consectetur adipisicing elit. Dolor tempora labore hic,
+        optio ipsa reiciendis deserunt? Saepe dicta quas est non porro, optio
+        adipisci dolorum amet ea, dolorem praesentium quo!
+      </p>
+    </section>
+    <br/>
+    <form class="form" action="">
+      <h1 id = "form-header">Contact Form</h1>
+      <div class = "form-div">
+        <label for="user" class="form-element">Name:</label>
+        <input
+          class="form-input"
+          id="user"
+          type="text"
+          name="user"
+          maxlength="30"
+          required="required"
+        />
+      </div>
+      <div class = "form-div">
+        <label for="em" class="form-element">Email:</label>
+        <input
+          class="form-input"
+          id="em"
+          type="email"
+          name="Email"
+          maxlength="30"
+          required="required"
+        />
+      </div>
+      <div class = "form-div">
+        <label for="pass" class="form-element">Phone Number:</label>
+        <input
+          class="form-input"
+          id="pass"
+          type="text"
+          name="Password"
+          maxlength="30"
+        />
+      </div>
+      <div class = "form-div">
+        <fieldset>
+          <legend>
+            <b>Would you prefer to be contacted by Email or Phone?</b>
+          </legend>
+          <input class="btn" id="Yes" type="radio" name="newsletter" />
+          <label class="btn-words" for="Yes">Email</label>
+          <br />
+          <input class="btn" id="No" type="radio" name="newsletter" />
+          <label class="btn-words" for="No">Phone</label>
+        </fieldset>
+      </div>
+
+      <label class="date-words" for="dateinput">Date:</label>
+      <input id="dateinput" type="date" name="date" />
+      <div class = "form-div">
+        <input
+          class="btn-primary"
+          type="submit"
+          name="submit"
+          value="Submit"
+        />
+        <input
+          class="btn-secondary"
+          type="reset"
+          name="reset"
+          value="Reset"
+        />
+      </div>
+    </form>
+  </body>
+</html>

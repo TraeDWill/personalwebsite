@@ -1,31 +1,65 @@
+/*Body*/
+body {
+  background-color:moccasin;
+}
+
+.photo {
+  border-radius: 90%;
+  grid-area: header;
+}
+
+.bio {
+  grid-area: bio;
+  width:600px;
+  padding: 0px 55px;
+}
+
+.name {
+  grid-area: name;
+}
+
+.grid-container1 {
+  display:grid;
+  flex-wrap:wrap;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 3fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    '. header name .'
+    '. header bio .'
+    '. header bio .'
+    '. . bio .';
+}
+
 /*Nav Bar*/
 .nav-list {
-  display: inline-block;
-  padding: 0;
+  display:flex;
+  justify-content: center;
   margin: 0;
   list-style-type: none;
+  padding-right:125px;
 }
 
 .list-item {
-  background-color: var(--green);
-  color: var(--white);
-  font-size: 2.4em;
+  font-size: 1.2em;
+  font-weight: bold;
   text-align: center;
   transition-duration: 0.4ms;
-  float: left;
+  float: right;
   border: none;
-  padding: 20px 0px;
+  padding:20px 0px;
 }
 
 .link {
   text-decoration: none;
-  color: var(--white);
-  padding: 20px 30px;
+  color: white;
+  padding: 5px;
+  background-color: #20314c ;
 }
 
 .link:hover {
-  background-color: var(--orange);
-  color: var(--black);
+  background-color: orange;
+  color: black;
 }
 
 /*form*/
