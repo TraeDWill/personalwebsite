@@ -7,20 +7,30 @@ body {
 }
 
 .photo {
-  margin-top: 75px;
+  margin-top: 10px;
   border-radius: 90%;
   grid-area: header;
   border: 5px solid #20314c;
 }
 
-.bio {
+.bio{
   text-align: left;
   font-size: x-large;
   grid-area: bio;
-  width: 600px;
-  padding: 0px 55px;
+  width: auto;
+  padding: 0px 15px;
   font-weight: 550;
-  line-height: 1.3;
+  line-height: 1.7;
+}
+
+.bio2{
+  text-align: left;
+  font-size: x-large;
+  grid-area: bio2;
+  width: auto;
+  padding: 0px 15px;
+  font-weight: 550;
+  line-height: 1.7;
 }
 
 .name {
@@ -28,20 +38,23 @@ body {
   font-size: 250%;
   padding-left: 50px;
   border: 0;
+  margin: 0;
+  text-align:center;
+  padding-top:80px;
 }
 
 .grid-container1 {
   display: grid;
   flex-wrap: wrap;
   justify-content: center;
-  grid-template-columns: 1fr 1fr 3fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 2fr;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: .1fr .8fr 1fr 1fr 2fr;
   grid-template-areas:
-    '. header name .'
-    '. header bio bio'
-    '. header bio bio'
-    '. . bio bio'
-    '. . bio bio';
+    'header name .'
+    'header bio bio'
+    'bio2 bio2 bio2'
+    'bio2 bio2 bio2'
+    'bio2 bio2 bio2';
 }
 
 /*Nav Bar*/
@@ -50,29 +63,35 @@ body {
   justify-content: center;
   margin: 0;
   list-style-type: none;
-  padding-right: 25px;
-}
-
-.list-item {
-  font-size: 1.2em;
-  font-weight: bold;
-  text-align: center;
-  transition-duration: 0.4ms;
-  float: right;
-  border: none;
-  padding: 20px 0px;
+  padding-left: 130px;
 }
 
 .link {
   text-decoration: none;
   color: white;
-  padding: 5px;
+  padding: 5px 10px;
   background-color: #20314c;
+  font-size:2em;
+  font-weight: bold;
+  text-align: center;
+  transition-duration: 0.4ms;
+  float: left;
+  border: none;
+  width: auto;
+  word-wrap:break-word;
 }
 
 .link:hover {
-  background-color: orange;
-  color: black;
+  background-color: darkslategray;
+  color: white;
+}
+
+.link:active{
+  background-color:darkslategrey;
+}
+
+.link:focus{
+  border: 5px solid darkslategrey;
 }
 
 @media (min-width: 1px) and (max-width: 414px) {
@@ -84,24 +103,45 @@ body {
     flex-wrap: wrap;
     justify-content: left;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 1fr 3fr;
+    grid-template-rows: 50px 1fr 1fr;
     grid-template-areas:
       'name'
       'header'
-      'bio';
+      'bio'
+      'bio2';
   }
   .photo {
-    align-self: center;
-    margin-left: 35px;
+    text-align:center;
     margin-top: 0;
-    width: 100%;
+    width: 95%;
   }
-  .bio {
+  .bio, .bio2 {
     width: 100%;
-    padding: 20px;
+    padding: 0;
   }
   .name {
-    margin-left: 15px;
+    font-size: 250%;
+    border: 0;
+    margin: 0;
+    text-align:center;
+    padding: 0;
+    padding-right: 13px; 
+  }
+  .nav-list{
+    padding:0;
+  }
+  .link{
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    background-color: #20314c;
+    font-size:1em;
+    font-weight: bold;
+    text-align: center;
+    transition-duration: 0.4ms;
+    float: left;
+    border: none;
+    width: auto;
   }
 }
 @media (min-width: 415px) and (max-width: 768px) {
@@ -115,21 +155,37 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 100px 1fr 3fr;
     grid-template-areas:
-      'header .'
       'header name'
-      'bio bio';
+      'header bio'
+      'bio2 bio2';
   }
   .photo {
     align-self: center;
-    margin-left: 35px;
     margin-top: 20px;
     width: 100%;
   }
-  .bio {
+  .bio, .bio2 {
     width: 100%;
     padding: 20px;
   }
   .name {
-    margin-left: 15px;
+    margin-right: 60px;
+    padding-top: 30px;
+  }
+  .nav-list{
+    padding : 0;
+  }
+  .link{
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    background-color: #20314c;
+    font-size:auto;
+    font-weight: bold;
+    text-align: center;
+    transition-duration: 0.4ms;
+    float: left;
+    border: none;
+    width: auto;
   }
 }
