@@ -6,6 +6,7 @@ body {
   padding: 2%;
 }
 
+/*images*/
 .photo {
   margin-top: 10px;
   border-radius: 90%;
@@ -13,6 +14,20 @@ body {
   border: 5px solid #20314c;
 }
 
+.owl{
+  margin-top: 10px;
+  border: 5px solid #20314c;
+  width: 96%;
+  margin-left: 5px;
+}
+
+.sieve{
+  margin-top: 10px;
+  border: 5px solid #20314c;
+  width: 96%;
+  height: 58%;
+  margin-left: 5px;
+}
 .bio{
   text-align: left;
   font-size: x-large;
@@ -43,18 +58,58 @@ body {
   padding-top:80px;
 }
 
+.previous{
+  font-size: 250%;
+  border: 0;
+  margin: 0;
+  text-align:center;
+  padding-bottom: 40px;
+}
+
 .grid-container1 {
   display: grid;
   flex-wrap: wrap;
   justify-content: center;
   grid-template-columns: 1fr 3fr 1fr;
-  grid-template-rows: .1fr .8fr 1fr 1fr 2fr;
+  grid-template-rows: .1fr .8fr 1fr 1fr 1fr;
   grid-template-areas:
     'header name .'
     'header bio bio'
     'bio2 bio2 bio2'
     'bio2 bio2 bio2'
     'bio2 bio2 bio2';
+}
+.school {
+  text-align: justify;
+  font-size: x-large;
+  grid-area: school;
+  width: auto;
+  font-weight: 550;
+  line-height: 1.4;
+  padding: 0px 10px;
+  border: 5px solid #20314c;
+}
+.primes{
+  text-align: justify;
+  font-size: x-large;
+  grid-area: primes;
+  width: auto;
+  padding: 0px 10px;
+  font-weight: 550;
+  line-height: 1.4;
+  border: 5px solid #20314c;
+}
+
+.grid-projects{
+  margin-bottom: 300px;
+  display: grid;
+  flex-wrap: wrap;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: .6fr 1fr;
+  grid-template-areas:
+  'school primes'
+  'school primes';
 }
 
 /*Nav Bar*/
