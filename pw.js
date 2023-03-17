@@ -11,7 +11,7 @@ let h1 = document.querySelector('#form-header');
 h1.style.textAlign = 'center';
 h1.style.inlineSize = '250px';
 h1.style.overflowWrap = 'break-word';
-h1.style.fontSize = '2.5em'
+h1.style.fontSize = '2.5em';
 h1.style.marginLeft = '25px';
 
 let div = document.querySelectorAll('.form-div');
@@ -27,7 +27,7 @@ for (var i = 0; i < formElement.length; ++i) {
   formElement[i].style.float = 'left';
   formElement[i].style.width = 'auto';
   formElement[i].style.paddingLeft = '5px';
-  formElement[i].style.fontSize = '1.1em'
+  formElement[i].style.fontSize = '1.1em';
 }
 
 let formInput = document.getElementsByClassName('.form-input');
