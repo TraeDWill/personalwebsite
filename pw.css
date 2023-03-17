@@ -180,7 +180,7 @@ body {
   }
   .grid-projects {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1.2fr;
     grid-template-areas:
       'school'
       'primes';
