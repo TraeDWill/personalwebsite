@@ -28,6 +28,9 @@ body {
   height: 61%;
   margin-left: 5px;
 }
+/* ------------------------ */
+
+/*Text*/
 
 .past-header {
   text-align: center;
@@ -80,6 +83,8 @@ body {
   padding-bottom: 40px;
 }
 
+/*About me grid container*/
+
 .grid-container1 {
   display: grid;
   flex-wrap: wrap;
@@ -93,6 +98,8 @@ body {
     'bio2 bio2 bio2'
     'bio2 bio2 bio2';
 }
+
+/*Projects Grid Container*/
 .school {
   text-align: center;
   font-size: x-large;
@@ -162,6 +169,8 @@ body {
   border: 5px solid darkslategrey;
 }
 
+/* Mobile Media */
+
 @media (min-width: 1px) and (max-width: 414px) {
   body {
     margin: 0px;
@@ -227,6 +236,9 @@ body {
     width: auto;
   }
 }
+
+/*Tablet Media*/
+
 @media (min-width: 415px) and (max-width: 768px) {
   body {
     margin: 0px;
