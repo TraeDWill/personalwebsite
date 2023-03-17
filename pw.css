@@ -28,6 +28,20 @@ body {
   height: 61%;
   margin-left: 5px;
 }
+
+.past-header{
+  text-align: center;
+}
+.past{
+  text-align: left;
+  font-size: x-large;
+  grid-area: bio;
+  width: auto;
+  padding: 0px 15px;
+  font-weight: 550;
+  line-height: 1.7;
+  margin-bottom: 100px;
+}
 .bio{
   text-align: left;
   font-size: x-large;
@@ -133,7 +147,7 @@ body {
   float: left;
   border: none;
   width: auto;
-  word-wrap:break-word;
+  
 }
 
 .link:hover {
