@@ -1,8 +1,8 @@
 let form = document.querySelector('form');
 form.style.margin = '0 auto';
 form.style.border = '2px solid';
-form.style.height = '450px';
-form.style.width = '350px';
+form.style.height = '500px';
+form.style.width = '300px';
 form.style.marginBottom = '50px';
 form.style.textAlign = 'right';
 form.style.padding = '10px';
